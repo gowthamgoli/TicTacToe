@@ -90,7 +90,7 @@ module game {
   }
 
   export function updateUI(params: IUpdateUI): void {
-    log.info("Game got updateUI:", params);
+    log.info("GameUI is updated with params:", params);
     let playerIdToProposal = params.playerIdToProposal;
      // Only one move/proposal per updateUI
     didMakeMove = playerIdToProposal && playerIdToProposal[yourPlayerInfo.playerId] != undefined;

@@ -81,7 +81,7 @@ var game;
         return proposals;
     }
     function updateUI(params) {
-        log.info("Game got updateUI:", params);
+        log.info("GameUI is updated with params:", params);
         var playerIdToProposal = params.playerIdToProposal;
         // Only one move/proposal per updateUI
         game.didMakeMove = playerIdToProposal && playerIdToProposal[game.yourPlayerInfo.playerId] != undefined;
